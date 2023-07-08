@@ -13,12 +13,39 @@
      src: url("assets/fonts/OpenSans-Bold.ttf");
      font-weight: 700;
    }
+* {
+    box-sizing: border-box;
+  }
 body{
+    width: 100%;
     font-family:'Open Sans';
-    width: 100vw;
     height: 100vh;
     background-image: url("./assets/img/blue-abstract-background-blue-creative-background-neon-lines-background-neon-blue-light.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    overflow-x: hidden;
+}
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav-item{
+  text-align: center;
+  font-weight: 300;
+  font-size: 35px;
+  color:rgb(255, 199, 94);
+  list-style: none;
+  text-decoration:none;
+  padding: 20px;
+  cursor: pointer;
+}
+ul{
+  padding: 25px;
+}
+li{
+  width: 200px;
+  border: solid #5B6DCD 10px;
+  border-radius: 25px;
 }
