@@ -13,39 +13,130 @@
      src: url("assets/fonts/OpenSans-Bold.ttf");
      font-weight: 700;
    }
+   @media (max-width: 768px) {
+    
+    .section {
+      width: 100%;
+    }
+  }
 * {
     box-sizing: border-box;
+    margin:0 auto;
   }
+html {
+    scroll-behavior: smooth; 
+ }
 body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 100%;
     font-family:'Open Sans';
+    color:rgb(0, 0, 0);
+    font-size: 35px;
     height: 100vh;
     background-image: url("./assets/img/blue-abstract-background-blue-creative-background-neon-lines-background-neon-blue-light.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: inherit ;
     overflow-x: hidden;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.nav{
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+  
 }
 .nav-list {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  justify-content:flex-end;
+  align-items:center;
 }
 .nav-item{
-  text-align: center;
+  text-align:center;
   font-weight: 300;
   font-size: 35px;
+  /* width: 75%; */
   color:rgb(255, 199, 94);
   list-style: none;
   text-decoration:none;
   padding: 20px;
   cursor: pointer;
 }
+li.nav-item{
+  width: 200px;
+  text-align: center;
+}
+.nav-link::after{
+  padding: 0 20px;
+  line-height: 50px;
+  transition: .3s;
+  color:bisque;
+  cursor:pointer;
+}
 ul{
   padding: 25px;
 }
 li{
-  width: 200px;
+  text-decoration:none;
+  list-style: none;
+  font-family:'Open Sans';
+  
+}
+.nav li{
+  width: 230px;
   border: solid #5B6DCD 10px;
   border-radius: 25px;
+}
+/*main start*/
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section {
+  width: 50%;
+}
+span{
+  color:#afff03;
+}
+.section-title {
+  font-weight: 500;
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #829985;
+  line-height: 1.5;
+}
+.nav-link {
+  text-decoration: none;
+  color: #afff03;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #829f87;
+}
+.section-title.main{
+  color:rgb(20, 255, 177);
+ text-decoration-line: underline;
+ line-height: 3.5;
+}
+.section-item {
+  position: relative;
+  padding-left: 30px;
+}
+
+.section-item::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0px;
+  width: 10px;
+  height: 10px; 
+  border: 1px solid #829985;
+  border-radius: 50%;
 }
