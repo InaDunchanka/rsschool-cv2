@@ -50,12 +50,16 @@ body{
   display: flex;
   flex-direction:column;
   justify-content: space-between;
-  
+  background-color:rgba(189, 189, 82, 0.526);
+
 }
 .nav-list {
   display: flex;
   justify-content:flex-end;
   align-items:center;
+  max-width: 1440px;
+  margin: 0 auto;
+  
 }
 .nav-item{
   text-align:center;
@@ -90,13 +94,15 @@ li{
 }
 .nav li{
   width: 230px;
-  border: solid #5B6DCD 10px;
+  border: solid #485dd3 10px;
   border-radius: 25px;
 }
 /*main start*/
 .main-container {
   display: flex;
   flex-wrap: wrap;
+  background-color:rgba(79, 101, 40, 0.526);
+
 }
 .section {
   width: 50%;
@@ -119,7 +125,7 @@ span{
 }
 
 .nav-link:hover {
-  color: rgb(130, 159, 135);
+  color: rgb(56, 68, 58);
 }
 .section-title.main{
   color:rgb(20, 255, 177);
@@ -147,8 +153,7 @@ span{
   justify-content: space-between;
   width: 100vh;
   padding: 25px;
-  margin: 30px;
-  background-color:rgba(130, 159, 135, 0.126)
+  background-color:rgba(129, 255, 94, 0.275);
 }
 .icon-style{
   height:50px;
