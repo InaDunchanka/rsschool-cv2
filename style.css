@@ -34,12 +34,13 @@ body{
     font-family:'Open Sans';
     color:rgb(0, 0, 0);
     font-size: 35px;
-    height: 100vh;
+    height: 100%;
     background-image: url("./assets/img/blue-abstract-background-blue-creative-background-neon-lines-background-neon-blue-light.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: inherit ;
     overflow-x: hidden;
+    margin: auto;
 }
 .container {
   max-width: 1440px;
@@ -60,7 +61,7 @@ body{
   text-align:center;
   font-weight: 300;
   font-size: 35px;
-  /* width: 75%; */
+  width: 75%;
   color:rgb(255, 199, 94);
   list-style: none;
   text-decoration:none;
@@ -118,14 +119,14 @@ span{
 }
 
 .nav-link:hover {
-  color: #829f87;
+  color: rgb(130, 159, 135);
 }
 .section-title.main{
   color:rgb(20, 255, 177);
  text-decoration-line: underline;
  line-height: 3.5;
 }
-.section-item {
+/* .section-item {
   position: relative;
   padding-left: 30px;
 }
@@ -139,4 +140,32 @@ span{
   height: 10px; 
   border: 1px solid #829985;
   border-radius: 50%;
+} */
+.container.footer{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  width: 100vh;
+  padding: 25px;
+  margin: 30px;
+  background-color:rgba(130, 159, 135, 0.126)
+}
+.icon-style{
+  height:50px;
+  margin-left:20px;
+  margin-top:7px;
+  
+}    
+.icon-style:hover {
+  display: flex;
+  flex-direction:column;
+  justify-content: space-around;
+  background-color:rgb(255, 199, 94);
+  padding:10px;
+}
+.footer_icon{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 70px 0 70px;
 }
